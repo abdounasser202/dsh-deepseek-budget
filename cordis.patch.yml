@@ -1,0 +1,4 @@
+# Bundle-form composition layer: mount this plugin as one inserted row.
+- insert:
+    - id: deepseek-budget
+      name: dsh-deepseek-budget

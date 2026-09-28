@@ -1,0 +1,22 @@
+{
+  "name": "dsh-deepseek-budget",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DeepSeek spend and budget meter for DSH: real provider-reported token usage from local session logs, priced against a USD budget.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
